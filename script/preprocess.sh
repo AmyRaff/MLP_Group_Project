@@ -30,15 +30,12 @@ export TRANSFORMERS_OFFLINE = 1
 export TMPDIR=/disk/scratch/${STUDENT_ID}/
 export TMP=/disk/scratch/${STUDENT_ID}/
 
-src_path=/home/s2112744/context-debias/data
+src_path=/home/${STUDENT_ID}/MLP_Group_Project/data
 
 rsync --archive --update --compress --progress ${src_path}/ ${TMP}
 
 echo "Data transferred" 
 
-#src_path=/home/s2112744/context-debias/transformers
-
-#rsync --archive --update --compress --progress ${src_path}/ ${TMP}
 
 
 model_type=bert
