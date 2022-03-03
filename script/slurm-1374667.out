@@ -1,0 +1,21 @@
+/var/spool/slurmd/job1374667/slurm_script: line 27: export: `=': not a valid identifier
+/var/spool/slurmd/job1374667/slurm_script: line 27: export: `1': not a valid identifier
+Begin transfer
+sending incremental file list
+./
+black.txt
+            233 100%    0.00kB/s    0:00:00              233 100%    0.00kB/s    0:00:00 (xfr#1, to-chk=6/8)
+cm_stereotype.txt
+            510 100%  498.05kB/s    0:00:00              510 100%  498.05kB/s    0:00:00 (xfr#2, to-chk=5/8)
+female.txt
+          2,118 100%   89.93kB/s    0:00:00            2,118 100%   89.93kB/s    0:00:00 (xfr#3, to-chk=4/8)
+male.txt
+          1,974 100%   33.24kB/s    0:00:00            1,974 100%   33.24kB/s    0:00:00 (xfr#4, to-chk=3/8)
+news-commentary-v15.en
+         32,768   0%  333.33kB/s    0:04:05        6,815,744   8%    6.50MB/s    0:00:11       14,385,152  17%    6.86MB/s    0:00:09       21,921,792  26%    6.97MB/s    0:00:08       29,491,200  36%    7.03MB/s    0:00:07       36,995,072  45%    7.19MB/s    0:00:06       44,531,712  54%    7.18MB/s    0:00:05       52,035,584  63%    7.17MB/s    0:00:04       59,539,456  72%    7.15MB/s    0:00:03       66,977,792  81%    7.14MB/s    0:00:02       74,416,128  90%    7.12MB/s    0:00:01       81,822,695 100%    7.10MB/s    0:00:10 (xfr#5, to-chk=2/8)
+stereotype.txt
+          1,604 100%    1.56kB/s    0:00:00            1,604 100%    1.56kB/s    0:00:01 (xfr#6, to-chk=1/8)
+white.txt
+            214 100%    0.21kB/s    0:00:00              214 100%    0.21kB/s    0:00:01 (xfr#7, to-chk=0/8)
+Data transferred
+rm: cannot remove '../preprocess/30/bert': No such file or directory

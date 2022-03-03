@@ -2,7 +2,6 @@
 #SBATCH -N 1	  # nodes requested
 #SBATCH -n 1	  # tasks requested
 #SBATCH --partition=Teach-Standard
-#SBATCH --nodelist=landonia07
 #SBATCH --gres=gpu:1
 #SBATCH --mem=12000  # memory in Mb
 #SBATCH --time=0-08:00:00
@@ -29,6 +28,8 @@ export TRANSFORMERS_OFFLINE = 1
 
 export TMPDIR=/disk/scratch/${STUDENT_ID}/
 export TMP=/disk/scratch/${STUDENT_ID}/
+
+echo "Begin transfer"
 
 src_path=/home/${STUDENT_ID}/MLP_Group_Project/data
 
