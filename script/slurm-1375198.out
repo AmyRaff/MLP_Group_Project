@@ -1,0 +1,22 @@
+Begin transfer
+sending incremental file list
+./
+black.txt
+            233 100%    0.00kB/s    0:00:00              233 100%    0.00kB/s    0:00:00 (xfr#1, to-chk=6/8)
+cm_stereotype.txt
+            510 100%  498.05kB/s    0:00:00              510 100%  498.05kB/s    0:00:00 (xfr#2, to-chk=5/8)
+female.txt
+          2,118 100%   44.01kB/s    0:00:00            2,118 100%   44.01kB/s    0:00:00 (xfr#3, to-chk=4/8)
+male.txt
+          1,974 100%   18.54kB/s    0:00:00            1,974 100%   18.54kB/s    0:00:00 (xfr#4, to-chk=3/8)
+news-commentary-v15.en
+         32,768   0%  135.59kB/s    0:10:03        5,701,632   6%    5.44MB/s    0:00:13       13,205,504  16%    6.29MB/s    0:00:10       20,250,624  24%    6.43MB/s    0:00:09       27,721,728  33%    6.60MB/s    0:00:08       35,160,064  42%    7.01MB/s    0:00:06       42,565,632  52%    7.00MB/s    0:00:05       50,003,968  61%    7.09MB/s    0:00:04       57,409,536  70%    7.07MB/s    0:00:03       64,815,104  79%    7.06MB/s    0:00:02       72,155,136  88%    7.04MB/s    0:00:01       79,593,472  97%    7.04MB/s    0:00:00       81,822,695 100%    6.89MB/s    0:00:11 (xfr#5, to-chk=2/8)
+stereotype.txt
+          1,604 100%    4.48kB/s    0:00:00            1,604 100%    4.48kB/s    0:00:00 (xfr#6, to-chk=1/8)
+white.txt
+            214 100%    0.52kB/s    0:00:00              214 100%    0.52kB/s    0:00:00 (xfr#7, to-chk=0/8)
+Data transferred
+Traceback (most recent call last):
+  File "/home/s2112744/MLP_Group_Project/script/../src/preprocess.py", line 2, in <module>
+    import regex as re
+ModuleNotFoundError: No module named 'regex'

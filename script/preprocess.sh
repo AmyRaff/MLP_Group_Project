@@ -24,7 +24,7 @@ export PYTHON_PATH=$PATH
 
 mkdir -p /disk/scratch/${STUDENT_ID}
 
-export TRANSFORMERS_OFFLINE = 1
+export TRANSFORMERS_OFFLINE=1
 
 export TMPDIR=/disk/scratch/${STUDENT_ID}/
 export TMP=/disk/scratch/${STUDENT_ID}/
