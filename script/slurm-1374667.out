@@ -19,3 +19,6 @@ white.txt
             214 100%    0.21kB/s    0:00:00              214 100%    0.21kB/s    0:00:01 (xfr#7, to-chk=0/8)
 Data transferred
 rm: cannot remove '../preprocess/30/bert': No such file or directory
+neutral: 59632
+attributes0: 3
+attributes1: 0
