@@ -1,4 +1,4 @@
-Adam,
+Adam
 Harry
 Roger
 Alan 

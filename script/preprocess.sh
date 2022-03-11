@@ -6,8 +6,6 @@
 #SBATCH --mem=12000  # memory in Mb
 #SBATCH --time=0-08:00:00
 
-export CUDA_HOME=/opt/cuda-9.0.176.1/
-
 export CUDNN_HOME=/opt/cuDNN-7.0/
 
 export STUDENT_ID=$(whoami)
@@ -29,30 +27,31 @@ export TRANSFORMERS_OFFLINE=1
 export TMPDIR=/disk/scratch/${STUDENT_ID}/
 export TMP=/disk/scratch/${STUDENT_ID}/
 
-echo "Begin transfer"
+#echo "Begin transfer"
 
-src_path=/home/${STUDENT_ID}/MLP_Group_Project/data
+#src_path=/home/${STUDENT_ID}/MLP_Group_Project/data
 
-rsync --archive --update --compress --progress ${src_path}/ ${TMP}
+#rsync --archive --update --compress --progress ${src_path}/ ${TMP}
 
-echo "Data transferred" 
-
+#echo "Data transferred" 
 
 
 model_type=bert
-data=news-commentary-v15.en
-seed=30
+#data=news-commentary-v15.en
+data=RC_2017
+seed=22
 block_size=128
 OUTPUT_DIR=../preprocess/$seed/$model_type
 
 rm -r $OUTPUT_DIR
 mkdir -p $OUTPUT_DIR
 
-python -u ../src/preprocess.py --input ../data/$data \
+python -u ../src/preprocess.py --input $TMP/$data \
                         --stereotypes ../data/cm_stereotype.txt \
-                        --attributes ../data/black.txt,../data/white.txt \
+                        --attributes ../data/white.txt,../data/black.txt \
                         --output $OUTPUT_DIR \
                         --seed $seed \
                         --block_size $block_size \
                         --model_type $model_type
+
 
