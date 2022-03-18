@@ -25,7 +25,7 @@ gpu=$2
 debias_layer=all # first last all
 loss_target=token # token sentence
 dev_data_size=100
-seed=22
+seed=$1
 alpha=0.2
 beta=0.8
 

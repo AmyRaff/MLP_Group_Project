@@ -39,7 +39,7 @@ model_type=bert
 data=clean_RC
 #data=news-commentary-v15.en
 #data=RC_2017
-seed=22
+seed=$1
 block_size=128
 OUTPUT_DIR=../preprocess/$seed/$model_type
 
@@ -49,7 +49,7 @@ mkdir -p $OUTPUT_DIR
 #this hack was the only way I could get the environment to work, just use python3  
 ~/miniconda3/envs/kaneko/bin/python3 -u ../src/preprocess.py --input $TMP/$data \
                         --stereotypes ../data/cm_stereotype.txt \
-                        --attributes ../data/whshort.txt,../data/blshort.txt \
+                        --attributes ../data/white.txt,../data/black.txt \
                         --output $OUTPUT_DIR \
                         --seed $seed \
                         --block_size $block_size \
