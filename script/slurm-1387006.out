@@ -1,0 +1,217 @@
+slurmstepd-landonia05: error: slurm_get_node_energy: Zero Bytes were transmitted or received
+slurmstepd-landonia05: error: _get_joules_task: can't get info from slurmd
+rm: cannot remove '../debiased_models/22/bert': No such file or directory
+bert 22
+03/17/2022 15:20:28 - WARNING - __main__ -   Process rank: -1, device: cuda, n_gpu: 1, distributed training: False, 16-bits training: False
+slurmstepd-landonia05: error: slurm_get_node_energy: Connection refused
+slurmstepd-landonia05: error: _get_joules_task: can't get info from slurmd
+03/17/2022 15:20:38 - INFO - transformers.configuration_utils -   loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-config.json from cache at /home/s2112744/.cache/torch/transformers/4dad0251492946e18ac39290fcfe91b89d370fee250efe9521476438fe8ca185.7156163d5fdc189c3016baca0775ffce230789d7fa2a42ef516483e4ca884517
+03/17/2022 15:20:38 - INFO - transformers.configuration_utils -   Model config BertConfig {
+  "_num_labels": 2,
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bad_words_ids": null,
+  "bos_token_id": null,
+  "decoder_start_token_id": null,
+  "do_sample": false,
+  "early_stopping": false,
+  "eos_token_id": null,
+  "finetuning_task": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1"
+  },
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "is_decoder": false,
+  "is_encoder_decoder": false,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1
+  },
+  "layer_norm_eps": 1e-12,
+  "length_penalty": 1.0,
+  "max_length": 20,
+  "max_position_embeddings": 512,
+  "min_length": 0,
+  "model_type": "bert",
+  "no_repeat_ngram_size": 0,
+  "num_attention_heads": 12,
+  "num_beams": 1,
+  "num_hidden_layers": 12,
+  "num_return_sequences": 1,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pad_token_id": 0,
+  "prefix": null,
+  "pruned_heads": {},
+  "repetition_penalty": 1.0,
+  "task_specific_params": null,
+  "temperature": 1.0,
+  "top_k": 50,
+  "top_p": 1.0,
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "use_bfloat16": false,
+  "vocab_size": 30522
+}
+
+03/17/2022 15:20:48 - INFO - transformers.configuration_utils -   loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-config.json from cache at /home/s2112744/.cache/torch/transformers/4dad0251492946e18ac39290fcfe91b89d370fee250efe9521476438fe8ca185.7156163d5fdc189c3016baca0775ffce230789d7fa2a42ef516483e4ca884517
+03/17/2022 15:20:48 - INFO - transformers.configuration_utils -   Model config BertConfig {
+  "_num_labels": 2,
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bad_words_ids": null,
+  "bos_token_id": null,
+  "decoder_start_token_id": null,
+  "do_sample": false,
+  "early_stopping": false,
+  "eos_token_id": null,
+  "finetuning_task": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1"
+  },
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "is_decoder": false,
+  "is_encoder_decoder": false,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1
+  },
+  "layer_norm_eps": 1e-12,
+  "length_penalty": 1.0,
+  "max_length": 20,
+  "max_position_embeddings": 512,
+  "min_length": 0,
+  "model_type": "bert",
+  "no_repeat_ngram_size": 0,
+  "num_attention_heads": 12,
+  "num_beams": 1,
+  "num_hidden_layers": 12,
+  "num_return_sequences": 1,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pad_token_id": 0,
+  "prefix": null,
+  "pruned_heads": {},
+  "repetition_penalty": 1.0,
+  "task_specific_params": null,
+  "temperature": 1.0,
+  "top_k": 50,
+  "top_p": 1.0,
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "use_bfloat16": false,
+  "vocab_size": 30522
+}
+
+03/17/2022 15:20:58 - INFO - transformers.tokenization_utils -   loading file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /home/s2112744/.cache/torch/transformers/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+slurmstepd-landonia05: error: slurm_get_node_energy: Connection refused
+slurmstepd-landonia05: error: _get_joules_task: can't get info from slurmd
+03/17/2022 15:21:08 - INFO - transformers.modeling_utils -   loading weights file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-pytorch_model.bin from cache at /home/s2112744/.cache/torch/transformers/aa1ef1aede4482d0dbcd4d52baad8ae300e60902e88fcb0bebdec09afd232066.36ca03ab34a1a5d5fa7bc3d03d55c4fa650fed07220e2eeebc06ce58d0e9a157
+03/17/2022 15:21:20 - INFO - transformers.modeling_utils -   Weights of BertForMaskedLM not initialized from pretrained model: ['cls.predictions.decoder.bias']
+03/17/2022 15:21:20 - INFO - transformers.modeling_utils -   Weights from pretrained model not used in BertForMaskedLM: ['cls.seq_relationship.weight', 'cls.seq_relationship.bias']
+03/17/2022 15:21:30 - INFO - transformers.modeling_utils -   loading weights file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-pytorch_model.bin from cache at /home/s2112744/.cache/torch/transformers/aa1ef1aede4482d0dbcd4d52baad8ae300e60902e88fcb0bebdec09afd232066.36ca03ab34a1a5d5fa7bc3d03d55c4fa650fed07220e2eeebc06ce58d0e9a157
+slurmstepd-landonia05: error: slurm_get_node_energy: Connection refused
+slurmstepd-landonia05: error: _get_joules_task: can't get info from slurmd
+03/17/2022 15:21:37 - INFO - transformers.modeling_utils -   Weights of BertForMaskedLM not initialized from pretrained model: ['cls.predictions.decoder.bias']
+03/17/2022 15:21:37 - INFO - transformers.modeling_utils -   Weights from pretrained model not used in BertForMaskedLM: ['cls.seq_relationship.weight', 'cls.seq_relationship.bias']
+03/17/2022 15:21:49 - INFO - __main__ -   Training/evaluation parameters Namespace(adam_epsilon=1e-08, block_size=128, cache_dir=None, config_name=None, data_file='../preprocess/22/bert/data.bin', debias_layer='all', dev_data_size=100, device=device(type='cuda'), do_eval=True, do_train=True, eval_all_checkpoints=False, eval_data_file=None, evaluate_during_training=True, exclusion_list=[], fp16=False, fp16_opt_level='O1', gradient_accumulation_steps=1, learning_rate=5e-05, line_by_line=True, local_rank=-1, logging_steps=500, loss_target='token', max_grad_norm=1.0, max_steps=-1, mlm=False, mlm_probability=0.15, model_name_or_path='bert-base-uncased', model_type='bert', n_gpu=1, no_cuda=False, num_train_epochs=3.0, output_dir='../debiased_models/22/bert', overwrite_cache=False, overwrite_output_dir=False, per_gpu_eval_batch_size=15, per_gpu_train_batch_size=15, save_steps=500, save_total_limit=None, seed=22, server_ip='', server_port='', should_continue=False, square_loss=True, token_loss=False, tokenizer_name=None, warmup_steps=0, weight_decay=0.0, weighted_loss=['0.2', '0.8'])
+slurmstepd-landonia05: error: slurm_get_node_energy: Connection refused
+slurmstepd-landonia05: error: _get_joules_task: can't get info from slurmd
+03/17/2022 15:22:23 - INFO - __main__ -   ***** Running training *****
+03/17/2022 15:22:23 - INFO - __main__ -     Num examples = 2676075
+03/17/2022 15:22:23 - INFO - __main__ -     Num Epochs = 3
+03/17/2022 15:22:23 - INFO - __main__ -     Instantaneous batch size per GPU = 15
+03/17/2022 15:22:23 - INFO - __main__ -     Total train batch size (w. parallel, distributed & accumulation) = 15
+03/17/2022 15:22:23 - INFO - __main__ -     Gradient Accumulation steps = 1
+03/17/2022 15:22:23 - INFO - __main__ -     Total optimization steps = 535218
+Epoch:   0%|          | 0/3 [00:00<?, ?it/s]
+Iteration:   0%|          | 0/789 [00:00<?, ?it/s][Aslurmstepd-landonia05: error: slurm_get_node_energy: Connection refused
+slurmstepd-landonia05: error: _get_joules_task: can't get info from slurmd
+slurmstepd-landonia05: error: slurm_get_node_energy: Connection refused
+slurmstepd-landonia05: error: _get_joules_task: can't get info from slurmd
+/pytorch/torch/csrc/utils/python_arg_parser.cpp:756: UserWarning: This overload of add_ is deprecated:
+	add_(Number alpha, Tensor other)
+Consider using one of the following signatures instead:
+	add_(Tensor other, *, Number alpha)
+
+Iteration:   0%|          | 1/789 [00:57<12:30:30, 57.14s/it][A
+Iteration:   0%|          | 2/789 [00:57<5:13:48, 23.92s/it] [A
+Iteration:   0%|          | 3/789 [00:58<2:52:33, 13.17s/it][A
+Iteration:   1%|          | 4/789 [00:58<1:47:00,  8.18s/it][A
+Iteration:   1%|          | 5/789 [00:59<1:11:07,  5.44s/it][A
+Iteration:   1%|          | 6/789 [00:59<48:56,  3.75s/it]  [A
+Iteration:   1%|          | 7/789 [01:00<35:56,  2.76s/it][A
+Iteration:   1%|          | 8/789 [01:00<26:30,  2.04s/it][A
+Iteration:   1%|          | 9/789 [01:01<19:56,  1.53s/it][A
+Iteration:   1%|▏         | 10/789 [01:01<16:01,  1.23s/it][A
+Iteration:   1%|▏         | 11/789 [01:02<13:13,  1.02s/it][A
+Iteration:   2%|▏         | 12/789 [01:03<12:23,  1.05it/s][A
+Iteration:   2%|▏         | 13/789 [01:03<10:33,  1.22it/s][A
+Iteration:   2%|▏         | 14/789 [01:04<09:40,  1.34it/s][A
+Iteration:   2%|▏         | 15/789 [01:05<09:36,  1.34it/s][A
+Iteration:   2%|▏         | 16/789 [01:05<09:24,  1.37it/s][A
+Iteration:   2%|▏         | 17/789 [01:06<08:54,  1.45it/s][A
+Iteration:   2%|▏         | 18/789 [01:06<07:54,  1.62it/s][A
+Iteration:   2%|▏         | 19/789 [01:07<08:05,  1.59it/s][A
+Iteration:   3%|▎         | 20/789 [01:08<07:28,  1.72it/s][Aslurmstepd-landonia05: error: slurm_get_node_energy: Connection refused
+slurmstepd-landonia05: error: _get_joules_task: can't get info from slurmd
+
+Iteration:   3%|▎         | 21/789 [01:08<07:46,  1.65it/s][A
+Iteration:   3%|▎         | 22/789 [01:09<07:13,  1.77it/s][A
+Iteration:   3%|▎         | 23/789 [01:09<07:19,  1.74it/s][A
+Iteration:   3%|▎         | 24/789 [01:10<06:52,  1.85it/s][A
+Iteration:   3%|▎         | 25/789 [01:10<06:35,  1.93it/s][A
+Iteration:   3%|▎         | 26/789 [01:11<07:12,  1.76it/s][AIteration:   3%|▎         | 26/789 [01:11<35:06,  2.76s/it]
+Epoch:   0%|          | 0/3 [01:11<?, ?it/s]
+Traceback (most recent call last):
+  File "../src/run_debias_mlm.py", line 967, in <module>
+    main()
+  File "../src/run_debias_mlm.py", line 963, in main
+    train(args, splited_data, datasets, model, original_model, tokenizer)
+  File "../src/run_debias_mlm.py", line 611, in train
+    loss = forward(attributes_hiddens, train_dataloaders, key)
+  File "../src/run_debias_mlm.py", line 425, in forward
+    final_layer_hiddens, first_token_hidden, all_layer_hiddens = model.bert(inputs)
+  File "/home/s2112744/miniconda3/envs/kaneko/lib/python3.7/site-packages/torch/nn/modules/module.py", line 550, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/home/s2112744/miniconda3/envs/kaneko/lib/python3.7/site-packages/transformers/modeling_bert.py", line 790, in forward
+    encoder_attention_mask=encoder_extended_attention_mask,
+  File "/home/s2112744/miniconda3/envs/kaneko/lib/python3.7/site-packages/torch/nn/modules/module.py", line 550, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/home/s2112744/miniconda3/envs/kaneko/lib/python3.7/site-packages/transformers/modeling_bert.py", line 407, in forward
+    hidden_states, attention_mask, head_mask[i], encoder_hidden_states, encoder_attention_mask
+  File "/home/s2112744/miniconda3/envs/kaneko/lib/python3.7/site-packages/torch/nn/modules/module.py", line 550, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/home/s2112744/miniconda3/envs/kaneko/lib/python3.7/site-packages/transformers/modeling_bert.py", line 379, in forward
+    intermediate_output = self.intermediate(attention_output)
+  File "/home/s2112744/miniconda3/envs/kaneko/lib/python3.7/site-packages/torch/nn/modules/module.py", line 550, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/home/s2112744/miniconda3/envs/kaneko/lib/python3.7/site-packages/transformers/modeling_bert.py", line 331, in forward
+    hidden_states = self.dense(hidden_states)
+  File "/home/s2112744/miniconda3/envs/kaneko/lib/python3.7/site-packages/torch/nn/modules/module.py", line 550, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/home/s2112744/miniconda3/envs/kaneko/lib/python3.7/site-packages/torch/nn/modules/linear.py", line 87, in forward
+    return F.linear(input, self.weight, self.bias)
+  File "/home/s2112744/miniconda3/envs/kaneko/lib/python3.7/site-packages/torch/nn/functional.py", line 1612, in linear
+    output = input.matmul(weight.t())
+RuntimeError: CUDA out of memory. Tried to allocate 52.00 MiB (GPU 0; 5.94 GiB total capacity; 5.11 GiB already allocated; 53.19 MiB free; 5.41 GiB reserved in total by PyTorch)
+slurmstepd-landonia05: error: slurm_get_node_energy: Connection refused
+slurmstepd-landonia05: error: _get_joules_task: can't get info from slurmd
+slurmstepd-landonia05: error: slurm_get_node_energy: Connection refused
+slurmstepd-landonia05: error: _get_joules_task: can't get info from slurmd

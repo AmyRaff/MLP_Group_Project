@@ -192,7 +192,6 @@ def create_dataloader(args, datasets, tokenizer, train=False):
 
     max_size = max([len(value) for key, value in datasets.items() if key != 'neutral'])
     min_size = min([len(value) for key, value in datasets.items() if key != 'neutral'])
-
     for key, dataset in datasets.items():
         example_num += len(dataset)
         if train:
@@ -942,21 +941,19 @@ def main():
         torch.distributed.barrier()  # End of barrier to make sure only the first process in distributed training download model & vocab
 
     logger.info("Training/evaluation parameters %s", args)
-
+     
     data = torch.load(args.data_file)
 
     attributes_examples = data['attributes_examples']
     attributes_labels = data['attributes_labels']
     neutral_examples = data['neutral_examples']
-
+    
     if 'neutral_labels' in data:
         neutral_labels = data['neutral_labels']
         splited_data = split_data(attributes_examples, attributes_labels, neutral_examples, neutral_labels, args)
     else:
         splited_data = split_data(attributes_examples, attributes_labels, neutral_examples, None, args)
-
     datasets = load_and_cache_examples(splited_data, args, tokenizer)
-
     if args.local_rank not in [-1, 0]:
         torch.distributed.barrier()  # Barrier to make sure only the first process in distributed training process the dataset, and the others will use the cache
 

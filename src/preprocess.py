@@ -86,27 +86,6 @@ def split_data(input, dev_rate, max_train_data_size):
     return train, dev
 
 def main(args):
-    '''
-    translator = str.maketrans(string.punctuation, ' '*len(string.punctuation))
-    data = []
-    with open(file=args.input,encoding='utf-8') as f:
-        line_count = 0
-        while line_count <= 50000:
-            for idx,line in enumerate(f):
-               comment_line = json.loads(line)
-               comment = comment_line["body"]
-               if comment != '[deleted]' and comment != '[removed]':
-                   comment = comment.replace("&gt;"," ")
-                   comment = comment.replace("&amp;"," ")
-                   comment = comment.replace("&lt;"," ")
-                   comment = comment.replace("&quot;"," ")
-                   comment = comment.replace("&apos;"," ")
-                   comment = comment.translate(translator)
-                   data.append(comment)
-                   line_count += 1
-        print(line_count)
-        print("data extracted")  
-    ''' 
     data = [l.strip() for l in open(args.input)]
     if args.stereotypes:
         stereotypes = [word.strip() for word in open(args.stereotypes)]
@@ -117,7 +96,7 @@ def main(args):
     attributes_l = []
     all_attributes_set = set()
     for attribute in args.attributes:
-        l = [word.strip() for word in open(attribute)]
+        l = [word.lower().strip() for word in open(attribute)]
         attributes_l.append(set(l))
         all_attributes_set |= set(l)
     print(all_attributes_set) 

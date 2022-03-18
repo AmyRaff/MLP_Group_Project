@@ -1,0 +1,650 @@
+rm: cannot remove '../debiased_models/22/bert': No such file or directory
+bert 22
+03/16/2022 15:35:26 - WARNING - __main__ -   Process rank: -1, device: cuda, n_gpu: 1, distributed training: False, 16-bits training: False
+03/16/2022 15:35:37 - INFO - transformers.configuration_utils -   loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-config.json from cache at /home/s2112744/.cache/torch/transformers/4dad0251492946e18ac39290fcfe91b89d370fee250efe9521476438fe8ca185.7156163d5fdc189c3016baca0775ffce230789d7fa2a42ef516483e4ca884517
+03/16/2022 15:35:37 - INFO - transformers.configuration_utils -   Model config BertConfig {
+  "_num_labels": 2,
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bad_words_ids": null,
+  "bos_token_id": null,
+  "decoder_start_token_id": null,
+  "do_sample": false,
+  "early_stopping": false,
+  "eos_token_id": null,
+  "finetuning_task": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1"
+  },
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "is_decoder": false,
+  "is_encoder_decoder": false,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1
+  },
+  "layer_norm_eps": 1e-12,
+  "length_penalty": 1.0,
+  "max_length": 20,
+  "max_position_embeddings": 512,
+  "min_length": 0,
+  "model_type": "bert",
+  "no_repeat_ngram_size": 0,
+  "num_attention_heads": 12,
+  "num_beams": 1,
+  "num_hidden_layers": 12,
+  "num_return_sequences": 1,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pad_token_id": 0,
+  "prefix": null,
+  "pruned_heads": {},
+  "repetition_penalty": 1.0,
+  "task_specific_params": null,
+  "temperature": 1.0,
+  "top_k": 50,
+  "top_p": 1.0,
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "use_bfloat16": false,
+  "vocab_size": 30522
+}
+
+03/16/2022 15:35:47 - INFO - transformers.configuration_utils -   loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-config.json from cache at /home/s2112744/.cache/torch/transformers/4dad0251492946e18ac39290fcfe91b89d370fee250efe9521476438fe8ca185.7156163d5fdc189c3016baca0775ffce230789d7fa2a42ef516483e4ca884517
+03/16/2022 15:35:47 - INFO - transformers.configuration_utils -   Model config BertConfig {
+  "_num_labels": 2,
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bad_words_ids": null,
+  "bos_token_id": null,
+  "decoder_start_token_id": null,
+  "do_sample": false,
+  "early_stopping": false,
+  "eos_token_id": null,
+  "finetuning_task": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1"
+  },
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "is_decoder": false,
+  "is_encoder_decoder": false,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1
+  },
+  "layer_norm_eps": 1e-12,
+  "length_penalty": 1.0,
+  "max_length": 20,
+  "max_position_embeddings": 512,
+  "min_length": 0,
+  "model_type": "bert",
+  "no_repeat_ngram_size": 0,
+  "num_attention_heads": 12,
+  "num_beams": 1,
+  "num_hidden_layers": 12,
+  "num_return_sequences": 1,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pad_token_id": 0,
+  "prefix": null,
+  "pruned_heads": {},
+  "repetition_penalty": 1.0,
+  "task_specific_params": null,
+  "temperature": 1.0,
+  "top_k": 50,
+  "top_p": 1.0,
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "use_bfloat16": false,
+  "vocab_size": 30522
+}
+
+03/16/2022 15:35:57 - INFO - transformers.tokenization_utils -   loading file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /home/s2112744/.cache/torch/transformers/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+03/16/2022 15:36:07 - INFO - transformers.modeling_utils -   loading weights file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-pytorch_model.bin from cache at /home/s2112744/.cache/torch/transformers/aa1ef1aede4482d0dbcd4d52baad8ae300e60902e88fcb0bebdec09afd232066.36ca03ab34a1a5d5fa7bc3d03d55c4fa650fed07220e2eeebc06ce58d0e9a157
+03/16/2022 15:36:19 - INFO - transformers.modeling_utils -   Weights of BertForMaskedLM not initialized from pretrained model: ['cls.predictions.decoder.bias']
+03/16/2022 15:36:19 - INFO - transformers.modeling_utils -   Weights from pretrained model not used in BertForMaskedLM: ['cls.seq_relationship.weight', 'cls.seq_relationship.bias']
+03/16/2022 15:36:29 - INFO - transformers.modeling_utils -   loading weights file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-pytorch_model.bin from cache at /home/s2112744/.cache/torch/transformers/aa1ef1aede4482d0dbcd4d52baad8ae300e60902e88fcb0bebdec09afd232066.36ca03ab34a1a5d5fa7bc3d03d55c4fa650fed07220e2eeebc06ce58d0e9a157
+03/16/2022 15:36:36 - INFO - transformers.modeling_utils -   Weights of BertForMaskedLM not initialized from pretrained model: ['cls.predictions.decoder.bias']
+03/16/2022 15:36:36 - INFO - transformers.modeling_utils -   Weights from pretrained model not used in BertForMaskedLM: ['cls.seq_relationship.weight', 'cls.seq_relationship.bias']
+03/16/2022 15:36:49 - INFO - __main__ -   Training/evaluation parameters Namespace(adam_epsilon=1e-08, block_size=128, cache_dir=None, config_name=None, data_file='../preprocess/22/bert/data.bin', debias_layer='all', dev_data_size=10, device=device(type='cuda'), do_eval=True, do_train=True, eval_all_checkpoints=False, eval_data_file=None, evaluate_during_training=True, exclusion_list=[], fp16=False, fp16_opt_level='O1', gradient_accumulation_steps=1, learning_rate=5e-05, line_by_line=True, local_rank=-1, logging_steps=500, loss_target='token', max_grad_norm=1.0, max_steps=-1, mlm=False, mlm_probability=0.15, model_name_or_path='bert-base-uncased', model_type='bert', n_gpu=1, no_cuda=False, num_train_epochs=2.0, output_dir='../debiased_models/22/bert', overwrite_cache=False, overwrite_output_dir=False, per_gpu_eval_batch_size=5, per_gpu_train_batch_size=5, save_steps=500, save_total_limit=None, seed=22, server_ip='', server_port='', should_continue=False, square_loss=True, token_loss=False, tokenizer_name=None, warmup_steps=0, weight_decay=0.0, weighted_loss=['0.2', '0.8'])
+03/16/2022 15:36:50 - INFO - __main__ -   ***** Running training *****
+03/16/2022 15:36:50 - INFO - __main__ -     Num examples = 60396
+03/16/2022 15:36:50 - INFO - __main__ -     Num Epochs = 2
+03/16/2022 15:36:50 - INFO - __main__ -     Instantaneous batch size per GPU = 5
+03/16/2022 15:36:50 - INFO - __main__ -     Total train batch size (w. parallel, distributed & accumulation) = 5
+03/16/2022 15:36:50 - INFO - __main__ -     Gradient Accumulation steps = 1
+03/16/2022 15:36:50 - INFO - __main__ -     Total optimization steps = 24160
+780
+100
+59516
+10
+10
+10
+Epoch:   0%|          | 0/2 [00:00<?, ?it/s]
+Iteration:   0%|          | 0/60 [00:00<?, ?it/s][A/pytorch/torch/csrc/utils/python_arg_parser.cpp:756: UserWarning: This overload of add_ is deprecated:
+	add_(Number alpha, Tensor other)
+Consider using one of the following signatures instead:
+	add_(Tensor other, *, Number alpha)
+
+Iteration:   2%|▏         | 1/60 [00:03<03:15,  3.32s/it][A
+Iteration:   3%|▎         | 2/60 [00:03<01:24,  1.45s/it][A
+Iteration:   5%|▌         | 3/60 [00:03<00:49,  1.16it/s][A
+Iteration:   7%|▋         | 4/60 [00:03<00:33,  1.69it/s][A
+Iteration:   8%|▊         | 5/60 [00:03<00:24,  2.27it/s][A
+Iteration:  10%|█         | 6/60 [00:04<00:18,  2.91it/s][A
+Iteration:  12%|█▏        | 7/60 [00:04<00:14,  3.55it/s][A
+Iteration:  13%|█▎        | 8/60 [00:04<00:12,  4.18it/s][A
+Iteration:  15%|█▌        | 9/60 [00:04<00:11,  4.59it/s][A
+Iteration:  17%|█▋        | 10/60 [00:04<00:10,  4.92it/s][A
+Iteration:  18%|█▊        | 11/60 [00:04<00:09,  5.41it/s][A
+Iteration:  20%|██        | 12/60 [00:05<00:08,  5.56it/s][A
+Iteration:  22%|██▏       | 13/60 [00:05<00:07,  6.01it/s][A
+Iteration:  23%|██▎       | 14/60 [00:05<00:07,  5.91it/s][A
+Iteration:  25%|██▌       | 15/60 [00:05<00:07,  6.10it/s][A
+Iteration:  27%|██▋       | 16/60 [00:05<00:07,  6.20it/s][A
+Iteration:  28%|██▊       | 17/60 [00:05<00:07,  5.99it/s][A
+Iteration:  30%|███       | 18/60 [00:06<00:07,  5.95it/s][A
+Iteration:  32%|███▏      | 19/60 [00:06<00:06,  6.26it/s][A
+Iteration:  33%|███▎      | 20/60 [00:06<00:06,  6.44it/s][A
+Iteration:  35%|███▌      | 21/60 [00:06<00:06,  6.22it/s][A
+Iteration:  37%|███▋      | 22/60 [00:06<00:05,  6.43it/s][A
+Iteration:  38%|███▊      | 23/60 [00:06<00:05,  6.47it/s][A
+Iteration:  40%|████      | 24/60 [00:06<00:05,  6.48it/s][A
+Iteration:  42%|████▏     | 25/60 [00:07<00:05,  6.69it/s][A
+Iteration:  43%|████▎     | 26/60 [00:07<00:05,  6.38it/s][A
+Iteration:  45%|████▌     | 27/60 [00:07<00:05,  6.40it/s][A
+Iteration:  47%|████▋     | 28/60 [00:07<00:04,  6.60it/s][A
+Iteration:  48%|████▊     | 29/60 [00:07<00:04,  6.26it/s][A
+Iteration:  50%|█████     | 30/60 [00:07<00:04,  6.10it/s][A
+Iteration:  52%|█████▏    | 31/60 [00:08<00:04,  5.91it/s][A
+Iteration:  53%|█████▎    | 32/60 [00:08<00:04,  5.80it/s][A
+Iteration:  55%|█████▌    | 33/60 [00:08<00:04,  5.49it/s][A
+Iteration:  57%|█████▋    | 34/60 [00:08<00:04,  5.30it/s][A
+Iteration:  58%|█████▊    | 35/60 [00:08<00:04,  5.70it/s][A
+Iteration:  60%|██████    | 36/60 [00:08<00:04,  5.84it/s][A
+Iteration:  62%|██████▏   | 37/60 [00:09<00:04,  5.74it/s][A
+Iteration:  63%|██████▎   | 38/60 [00:09<00:03,  5.74it/s][A
+Iteration:  65%|██████▌   | 39/60 [00:09<00:03,  5.70it/s][A
+Iteration:  67%|██████▋   | 40/60 [00:09<00:03,  5.77it/s][A
+Iteration:  68%|██████▊   | 41/60 [00:09<00:03,  5.83it/s][A
+Iteration:  70%|███████   | 42/60 [00:10<00:02,  6.04it/s][A
+Iteration:  72%|███████▏  | 43/60 [00:10<00:02,  6.22it/s][A
+Iteration:  73%|███████▎  | 44/60 [00:10<00:02,  6.44it/s][A
+Iteration:  75%|███████▌  | 45/60 [00:10<00:02,  6.27it/s][A
+Iteration:  77%|███████▋  | 46/60 [00:10<00:02,  6.37it/s][A
+Iteration:  78%|███████▊  | 47/60 [00:10<00:02,  6.22it/s][A
+Iteration:  80%|████████  | 48/60 [00:10<00:01,  6.07it/s][A
+Iteration:  82%|████████▏ | 49/60 [00:11<00:01,  6.33it/s][A
+Iteration:  83%|████████▎ | 50/60 [00:11<00:01,  5.70it/s][A
+Iteration:  85%|████████▌ | 51/60 [00:11<00:01,  5.40it/s][A
+Iteration:  87%|████████▋ | 52/60 [00:11<00:01,  5.78it/s][A
+Iteration:  88%|████████▊ | 53/60 [00:11<00:01,  5.81it/s][A
+Iteration:  90%|█████████ | 54/60 [00:11<00:00,  6.14it/s][A
+Iteration:  92%|█████████▏| 55/60 [00:12<00:00,  6.00it/s][A
+Iteration:  93%|█████████▎| 56/60 [00:12<00:00,  6.24it/s][A
+Iteration:  95%|█████████▌| 57/60 [00:12<00:00,  6.46it/s][A
+Iteration:  97%|█████████▋| 58/60 [00:12<00:00,  6.18it/s][A
+Iteration:  98%|█████████▊| 59/60 [00:12<00:00,  6.27it/s][A
+Iteration: 100%|██████████| 60/60 [00:12<00:00,  6.03it/s][AIteration: 100%|██████████| 60/60 [00:12<00:00,  4.63it/s]
+Epoch:  50%|█████     | 1/2 [00:12<00:12, 12.97s/it]780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+
+Iteration:   0%|          | 0/60 [00:00<?, ?it/s][A
+Iteration:   2%|▏         | 1/60 [00:01<01:23,  1.41s/it][A
+Iteration:   3%|▎         | 2/60 [00:01<00:39,  1.45it/s][A
+Iteration:   5%|▌         | 3/60 [00:01<00:25,  2.21it/s][A
+Iteration:   7%|▋         | 4/60 [00:01<00:18,  3.02it/s][A
+Iteration:   8%|▊         | 5/60 [00:02<00:14,  3.75it/s][A
+Iteration:  10%|█         | 6/60 [00:02<00:12,  4.27it/s][A
+Iteration:  12%|█▏        | 7/60 [00:02<00:11,  4.66it/s][A
+Iteration:  13%|█▎        | 8/60 [00:02<00:10,  5.00it/s][A
+Iteration:  15%|█▌        | 9/60 [00:02<00:09,  5.15it/s][A
+Iteration:  17%|█▋        | 10/60 [00:02<00:09,  5.51it/s][A
+Iteration:  18%|█▊        | 11/60 [00:03<00:08,  5.80it/s][A
+Iteration:  20%|██        | 12/60 [00:03<00:08,  5.79it/s][A
+Iteration:  22%|██▏       | 13/60 [00:03<00:08,  5.85it/s][A
+Iteration:  23%|██▎       | 14/60 [00:03<00:07,  6.10it/s][A
+Iteration:  25%|██▌       | 15/60 [00:03<00:07,  6.35it/s][A
+Iteration:  27%|██▋       | 16/60 [00:03<00:07,  6.07it/s][A
+Iteration:  28%|██▊       | 17/60 [00:04<00:07,  5.98it/s][A
+Iteration:  30%|███       | 18/60 [00:04<00:06,  6.15it/s][A
+Iteration:  32%|███▏      | 19/60 [00:04<00:06,  6.37it/s][A
+Iteration:  33%|███▎      | 20/60 [00:04<00:06,  6.42it/s][A
+Iteration:  35%|███▌      | 21/60 [00:04<00:06,  6.23it/s][A
+Iteration:  37%|███▋      | 22/60 [00:04<00:06,  6.00it/s][A
+Iteration:  38%|███▊      | 23/60 [00:05<00:06,  5.60it/s][A
+Iteration:  40%|████      | 24/60 [00:05<00:06,  5.68it/s][A
+Iteration:  42%|████▏     | 25/60 [00:05<00:06,  5.68it/s][A
+Iteration:  43%|████▎     | 26/60 [00:05<00:05,  5.73it/s][A
+Iteration:  45%|████▌     | 27/60 [00:05<00:05,  6.08it/s][A
+Iteration:  47%|████▋     | 28/60 [00:05<00:05,  6.34it/s][A
+Iteration:  48%|████▊     | 29/60 [00:06<00:05,  6.15it/s][A
+Iteration:  50%|█████     | 30/60 [00:06<00:04,  6.41it/s][A
+Iteration:  52%|█████▏    | 31/60 [00:06<00:04,  6.25it/s][A
+Iteration:  53%|█████▎    | 32/60 [00:06<00:04,  6.33it/s][A
+Iteration:  55%|█████▌    | 33/60 [00:06<00:04,  6.37it/s][A
+Iteration:  57%|█████▋    | 34/60 [00:06<00:04,  6.41it/s][A
+Iteration:  58%|█████▊    | 35/60 [00:06<00:03,  6.43it/s][A
+Iteration:  60%|██████    | 36/60 [00:07<00:03,  6.56it/s][A
+Iteration:  62%|██████▏   | 37/60 [00:07<00:03,  6.20it/s][A
+Iteration:  63%|██████▎   | 38/60 [00:07<00:03,  6.48it/s][A
+Iteration:  65%|██████▌   | 39/60 [00:07<00:03,  5.91it/s][A
+Iteration:  67%|██████▋   | 40/60 [00:07<00:03,  5.86it/s][A
+Iteration:  68%|██████▊   | 41/60 [00:07<00:03,  5.72it/s][A
+Iteration:  70%|███████   | 42/60 [00:08<00:03,  5.72it/s][A
+Iteration:  72%|███████▏  | 43/60 [00:08<00:02,  5.87it/s][A
+Iteration:  73%|███████▎  | 44/60 [00:08<00:02,  5.87it/s][A
+Iteration:  75%|███████▌  | 45/60 [00:08<00:02,  5.80it/s][A
+Iteration:  77%|███████▋  | 46/60 [00:08<00:02,  5.95it/s][A
+Iteration:  78%|███████▊  | 47/60 [00:08<00:02,  6.13it/s][A
+Iteration:  80%|████████  | 48/60 [00:09<00:02,  5.96it/s][A
+Iteration:  82%|████████▏ | 49/60 [00:09<00:01,  5.94it/s][A
+Iteration:  83%|████████▎ | 50/60 [00:09<00:01,  6.08it/s][A
+Iteration:  85%|████████▌ | 51/60 [00:09<00:01,  5.92it/s][A
+Iteration:  87%|████████▋ | 52/60 [00:09<00:01,  5.89it/s][A
+Iteration:  88%|████████▊ | 53/60 [00:09<00:01,  6.04it/s][A
+Iteration:  90%|█████████ | 54/60 [00:10<00:01,  5.91it/s][A
+Iteration:  92%|█████████▏| 55/60 [00:10<00:00,  5.52it/s][A
+Iteration:  93%|█████████▎| 56/60 [00:10<00:00,  5.79it/s][A
+Iteration:  95%|█████████▌| 57/60 [00:10<00:00,  5.79it/s][A
+Iteration:  97%|█████████▋| 58/60 [00:10<00:00,  5.97it/s][A
+Iteration:  98%|█████████▊| 59/60 [00:11<00:00,  5.96it/s][A
+Iteration: 100%|██████████| 60/60 [00:11<00:00,  6.11it/s][AIteration: 100%|██████████| 60/60 [00:11<00:00,  5.37it/s]
+Epoch: 100%|██████████| 2/2 [00:24<00:00, 11.92s/it]Epoch: 100%|██████████| 2/2 [00:24<00:00, 12.08s/it]
+03/16/2022 15:37:14 - INFO - __main__ -   ***** Running evaluation  *****
+03/16/2022 15:37:14 - INFO - __main__ -     Num examples = 30
+03/16/2022 15:37:14 - INFO - __main__ -     Batch size = 5
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+780
+100
+59516
+10
+10
+10
+  0%|          | 0/6 [00:00<?, ?it/s] 33%|███▎      | 2/6 [00:00<00:00, 18.09it/s] 67%|██████▋   | 4/6 [00:00<00:00, 18.20it/s]100%|██████████| 6/6 [00:00<00:00, 21.12it/s]
+03/16/2022 15:37:14 - INFO - __main__ -    global_step = 120, evaluate loss = 56.39449111931026
+/home/s2112744/miniconda3/envs/kaneko/lib/python3.7/site-packages/torch/optim/lr_scheduler.py:231: UserWarning: To get the last learning rate computed by the scheduler, please use `get_last_lr()`.
+  warnings.warn("To get the last learning rate computed by the scheduler, "
+03/16/2022 15:37:15 - INFO - transformers.configuration_utils -   Configuration saved in ../debiased_models/22/bert/checkpoint-best/config.json
+03/16/2022 15:37:22 - INFO - transformers.modeling_utils -   Model weights saved in ../debiased_models/22/bert/checkpoint-best/pytorch_model.bin
+03/16/2022 15:37:23 - INFO - __main__ -   Saving model checkpoint to ../debiased_models/22/bert/checkpoint-best
+/home/s2112744/miniconda3/envs/kaneko/lib/python3.7/site-packages/torch/optim/lr_scheduler.py:200: UserWarning: Please also save or load the state of the optimzer when saving or loading the scheduler.
+  warnings.warn(SAVE_STATE_WARNING, UserWarning)
+03/16/2022 15:37:38 - INFO - __main__ -   Saving optimizer and scheduler states to ../debiased_models/22/bert/checkpoint-best
+03/16/2022 15:37:38 - INFO - __main__ -    best_step = 120, best loss = 56.39449111931026

@@ -2,8 +2,8 @@
 #SBATCH -N 1      # nodes requested
 #SBATCH -n 1      # tasks requested
 #SBATCH --partition=Teach-Standard
-#SBATCH --gres=gpu:1
-#SBATCH --mem=19000  # memory in Mb
+#SBATCH --gres=gpu:3
+#SBATCH --mem=90000  # memory in Mb
 #SBATCH --time=0-08:00:00
 
 export CUDA_HOME=/opt/cuda-9.0.176.1/
@@ -18,14 +18,14 @@ mkdir -p /disk/scratch/${STUDENT_ID}
 
 export TMPDIR=/disk/scratch/${STUDENT_ID}/
 export TMP=/disk/scratch/${STUDENT_ID}/
-source /home/${STUDENT_ID}/miniconda3/bin/activate mlp
+#source /home/${STUDENT_ID}/miniconda3/bin/activate mlp
 
 model_type=$1
 gpu=$2
 debias_layer=all # first last all
 loss_target=token # token sentence
-dev_data_size=1000
-seed=42
+dev_data_size=100
+seed=22
 alpha=0.2
 beta=0.8
 
@@ -55,8 +55,8 @@ CUDA_VISIBLE_DEVICES=$gpu python ../src/run_debias_mlm.py \
     --data_file=$TRAIN_DATA \
     --do_eval \
     --learning_rate 5e-5 \
-    --per_gpu_train_batch_size 15 \
-    --per_gpu_eval_batch_size 15 \
+    --per_gpu_train_batch_size 5 \
+    --per_gpu_eval_batch_size 5 \
     --num_train_epochs 3 \
     --block_size 128 \
     --loss_target $loss_target \
