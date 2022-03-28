@@ -1,5 +1,5 @@
 debiased_models/
 preprocess/
-data/clean_RC
-data/news*
+data/RC*
 script/runs
+script/slurm*
