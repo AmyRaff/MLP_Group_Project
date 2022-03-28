@@ -1,3 +1,5 @@
+'''Code to check if the names are present in the news commentary dataset'''
+
 name_file = open("../data/black.txt","r")
 name_file2 = open("../data/white.txt","r")
 names = set(name_file.read().split("\n"))

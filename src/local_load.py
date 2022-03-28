@@ -20,7 +20,7 @@ def parse_args():
 
 def prepare_transformer(args):
     if args.model_type == 'bert':
-        pretrained_weights = 'bert-base-uncased'
+        pretrained_weights = 'bert-base-cased'
         model = BertModel.from_pretrained(pretrained_weights, output_hidden_states=True)
         tokenizer = BertTokenizer.from_pretrained(pretrained_weights)
     elif args.model_type == 'roberta':
